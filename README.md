@@ -5,6 +5,14 @@
   <a href="https://twitter.com/intent/follow?screen_name=_nwodtuhs" title="Follow"><img src="https://img.shields.io/twitter/follow/_nwodtuhs?label=Shutdown&style=social"></a>
 </p>
 
+Using these Google Colab scripts is really simple. See the the GIF below.
+
+![](assets/example_install.gif)
+
+Once the environment is up and ready (hashcat installed, rules and wordlists downloaded, hash files downloaded) you can run hashcat, see the GIF below.
+
+![](assets/example_crack.gif)
+
 ## Workflow example 1 (simple wordlist)
 
 This Google colab can be used for hash cracking with wordlists and rules.
