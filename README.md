@@ -1,4 +1,4 @@
-# google-colab-hashcat
+# Google colab hash cracking
 
 <p align="center">
   <a href="https://colab.research.google.com/github/ShutdownRepo/google-colab-hashcat/blob/main/google_colab_hashcat.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
@@ -27,7 +27,7 @@ management
 admin
 ```
 2. upload your hashes list on the colab `!wget http://yourip:yourport/yourfile`
-3. run the hashcat command `!hashcat --status --hash-type 1000 --attack-mode 0 --username DOMAIN.LOCAL.ntds --rules-file rules/d3adhob0.rule company.lst`
+3. run the hashcat command `!hashcat --status --hash-type 1000 --attack-mode 0 --username --rules-file rules/d3adhob0.rule DOMAIN.LOCAL.ntds company.lst`
 
 ## Workflow example 3 (OPSEC: crack anonymized hashes)
 
@@ -60,7 +60,8 @@ Here are some of the most used attack modes for the `--attack-mode` option
 
 Here are some of the most used hash types for the `--hash-type` option
 ```
-1000     NTLM (actually it shouldn't be called NTLM, but LMhash:NThash format)
+1000     NTLM (actually it's for NT hashes)
+3000     LM
 5500     Net-NTLMv1 (actually, it should be called NTLMv1)
 5600     Net-NTLMv2 (actually, it should be called NTLMv2)
 13100    Kerberoast
@@ -72,3 +73,6 @@ Here are some of the most used hash types for the `--hash-type` option
 1400     sha2-256
 1700     sha2-512
 ```
+
+# Credits
+Credits go to mxrch for his original project called [penglab](https://github.com/mxrch/penglab)
